@@ -1,0 +1,36 @@
+<examples>
+    <example>
+        <output>
+Considerations and Next Steps:
+
+- This sentence contains two parts: a **question** in past tense and a **statement** about an ongoing change.
+- The first part asks if the person has seen something, so the verb **"to see"** must be in past tense.
+- The second part describes a change in state (players becoming greedy), so the verb **"to become"** needs to be in progressive tense.
+- Think about how to mark the **subject**, **object**, and **verb** correctly with the proper particles.
+- The structure of the sentence will be different in Spanish compared to English.
+
+You can:
+
+- Try forming the question using the vocabulary and past tense of "to see."
+- Ask about how to express "becoming" correctly in Spanish.
+- Attempt the full sentence and ask for feedback.
+        </output>
+        <score>6</score>
+        <score:reason>
+            This example scores 6 because the explanation is too verbose.
+        </score:reason>
+    </example>
+    <example>
+        <output>
+Next Steps:
+
+- This sentence consists of two parts: a **past tense question** and a **progressive change statement**.
+- Try breaking it into: **"see new episode?"** + **"players becoming greedy."**
+- Ask for help with verb conjugations or particle usage if needed.
+        </output>
+        <score>10</score>
+        <score:reason>
+            This example scores 10 because the explanation is concise and directly actionable.
+        </score:reason>
+    </example>
+</examples>

@@ -1,0 +1,91 @@
+
+<example>
+    <user:input>
+        The children are in the kitchen, did you buy the milk?
+    </user:input>
+    <score>4</score>
+    <score_reasons>
+        - BAD: Starts with unnecessary explanation before showing vocabulary
+        - BAD: Reveals conjugated verb forms directly
+        - BAD: Sentence structure is too specific instead of conceptual
+        - BAD: Gives away tense and subject information
+        - BAD: Explanation is too long and detailed for a beginner
+        - BAD: Does not encourage the learner to think about the sentence structure or vocabulary on their own
+        - BAD: Gives the answer rather than guiding the learner to discover it themselves
+    </score_reasons>
+    <assistant:output>
+        Let's break this sentence down step by step and translate it naturally into Spanish.
+
+        First, here is the vocabulary you will need:
+
+        | English | Spanish |
+        |----------|----------|
+        | the children | los niños |
+        | the kitchen | la cocina |
+        | the milk | la leche |
+        | are | están |
+        | did you buy | compraste |
+
+        Now we can build the sentence.
+
+        For the first clause, we say:
+        Los niños están en la cocina.
+
+        For the second clause, we ask:
+        ¿Compraste la leche?
+
+        Full sentence:
+        Los niños están en la cocina, ¿compraste la leche?
+
+        Sentence structure:
+        [Subject: los niños] [Verb: están] [Prepositional phrase: en la cocina], 
+        [Verb-past: compraste] [Object: la leche]?
+
+        Notice that "compraste" is the second person singular preterite form of "comprar".
+    </assistant:output>
+</example>
+
+
+
+
+<example>
+    <user:input>
+        The children are in the kitchen, did you buy the milk?
+    </user:input>
+    <score>10</score>
+    <score_reasons>
+        - GOOD: Shows vocabulary immediately
+        - GOOD: Uses conceptual sentence structure
+        - GOOD: Does not reveal verb conjugations
+        - GOOD: Keeps explanation minimal
+        - GOOD: Encourages the learner to think about the sentence structure and vocabulary on their own
+        - GOOD: Guides the learner to discover the answer themselves rather than giving it away
+    </score_reasons>
+    <assistant:output>
+        Cheatsheet:
+        | Word | Spanish | Type |
+        |------|----------|------|
+        | children | niños | Noun |
+        | kitchen | cocina | Noun |
+        | milk | leche | Noun |
+        | to be (location) | estar | Verb |
+        | to buy | comprar | Verb |
+
+        Sentence structure:
+        [Subject] [Verb] [Location]  , [Verb-past] [Object] 
+
+        Considerations:
+        - This is a compound sentence with two clauses separated by a comma
+        - The first clause expresses location
+        - The second clause asks about a past action
+        - Spanish does not use auxiliary verbs for past tense questions
+
+        Possible next steps:
+        - attempt an answer
+        - ask clues about location prepositions
+        - ask clues about past tense formation
+        - ask clues about subject omission
+        - ask clues about question formation
+    </assistant:output>
+</example>
+
