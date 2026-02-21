@@ -115,8 +115,18 @@ def group_words(request, pk):
 
 
 @api_view(['GET'])
-def study_sessions_list(request):
+def study_sessions_list(request, pk=None):
+    # Accept optional `pk` for two use-cases routed to this view:
+    # - /api/study-activities/<pk>/study_sessions  -> filter by study_activity_id
+    # - /api/groups/<pk>/study_sessions           -> filter by group_id
     qs = StudySession.objects.all().order_by('-created_at')
+    if pk is not None:
+        path = request.path
+        if '/study-activities/' in path:
+            qs = qs.filter(study_activity_id=pk)
+        elif '/groups/' in path:
+            qs = qs.filter(group_id=pk)
+
     page_obj = paginate_qs(request, qs, per_page=100)
     items = [
         { 'id': s.id, 'group_id': s.group_id, 'created_at': s.created_at } for s in page_obj.object_list

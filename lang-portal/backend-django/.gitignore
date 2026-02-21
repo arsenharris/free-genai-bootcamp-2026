@@ -1,0 +1,23 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+.env
+.DS_Store
+*.log
+*.pot
+*.mo
+.pytest_cache/
+.mypy_cache/
+coverage/
+htmlcov/
+env/
+venv/*
+instance/
+*.egg-info/
+/.idea/
+/venv/
+# Django migrations (keep if you want to track migrations)
+# **/migrations/

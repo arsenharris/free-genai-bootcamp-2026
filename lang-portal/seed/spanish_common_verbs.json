@@ -1,0 +1,22 @@
+[
+  {"kanji": "hablar", "word": "hablar", "romaji": "ah-BLAR", "english": "to speak", "parts": [{"part": "hab", "syllables": ["ha","blar"]}]},
+  {"kanji": "comer", "word": "comer", "romaji": "ko-MER", "english": "to eat", "parts": [{"part": "co", "syllables": ["co","mer"]}]},
+  {"kanji": "vivir", "word": "vivir", "romaji": "vee-VEER", "english": "to live", "parts": [{"part": "vi", "syllables": ["vi","vir"]}]},
+  {"kanji": "ser", "word": "ser", "romaji": "SER", "english": "to be (essential)", "parts": []},
+  {"kanji": "estar", "word": "estar", "romaji": "es-TAR", "english": "to be (state)", "parts": []},
+  {"kanji": "tener", "word": "tener", "romaji": "te-NER", "english": "to have", "parts": [{"part": "te", "syllables": ["te","ner"]}]},
+  {"kanji": "hacer", "word": "hacer", "romaji": "a-SER", "english": "to do/make", "parts": [{"part": "ha", "syllables": ["ha","cer"]}]},
+  {"kanji": "ir", "word": "ir", "romaji": "EER", "english": "to go", "parts": []},
+  {"kanji": "ver", "word": "ver", "romaji": "VER", "english": "to see", "parts": []},
+  {"kanji": "dar", "word": "dar", "romaji": "DAR", "english": "to give", "parts": []},
+  {"kanji": "saber", "word": "saber", "romaji": "sa-BER", "english": "to know (facts)", "parts": []},
+  {"kanji": "querer", "word": "querer", "romaji": "ke-REHR", "english": "to want/love", "parts": []},
+  {"kanji": "llegar", "word": "llegar", "romaji": "ye-GAR", "english": "to arrive", "parts": []},
+  {"kanji": "pasar", "word": "pasar", "romaji": "pa-SAR", "english": "to pass/happen", "parts": []},
+  {"kanji": "deber", "word": "deber", "romaji": "de-BER", "english": "should/ought to", "parts": []},
+  {"kanji": "poner", "word": "poner", "romaji": "po-NER", "english": "to put/place", "parts": []},
+  {"kanji": "parecer", "word": "parecer", "romaji": "pa-re-SEHR", "english": "to seem", "parts": []},
+  {"kanji": "quedar", "word": "quedar", "romaji": "ke-DAR", "english": "to remain/stay", "parts": []},
+  {"kanji": "creer", "word": "creer", "romaji": "kre-ER", "english": "to believe", "parts": []},
+  {"kanji": "traer", "word": "traer", "romaji": "tra-ER", "english": "to bring", "parts": []}
+]
