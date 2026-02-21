@@ -1,0 +1,211 @@
+#Frontend Technical Spec
+
+##Pages
+
+###Dashboard `/dashboard`
+
+####Purpose
+The purpose of this page is to provide a summary of learning  and act as the default  page when a user visit the web-app
+
+####Components
+This page contains the following componens 
+-Last Study Session
+    shows last activity used
+    shows when last activity used
+    summarises wrong vs correct from last activity
+    has a link to the group
+
+-Study Progress
+    total words study e.g. 3/124
+        across all study session show total words studied out of all possible words in our database
+    display a mastery progress e.g. 0%    
+
+-Quick Stats
+    success rate e.g. 80%
+    total study sessions
+    total active groups
+    study streak
+
+-Start Studying Button
+    goes to study activites page
+
+#### Needed API Points
+We will need the following API points
+
+-GET /api/dashboard/last_study_session
+-GET /api/dashboard/study_progress
+-GET /api/dashboard/quick-stats
+
+
+
+##Study Activities /study-activities
+
+####Purpose
+The purpose of this page is to show to show a collection of study activites with a thumbnail and its name, to either launch or view the study activity
+
+####Components
+
+-Study Activity Card 
+    show a thumbnail of the study activity 
+    the name of the study activity
+    a launch button to take us to the launch page
+    the view page to view more info about last study sessions for this study activity
+
+
+####Needed API Points
+
+-GET /api/study-activities
+    
+
+
+
+
+
+
+
+
+
+
+
+##Study Activity show  /study-activities/:id
+
+####Purpose
+The purpose of this page is to show the details of a study activity and its past study sessions
+
+
+####Components
+-Name of study activity
+-Thumbnail of Study activity
+-Description of study activity
+-Launch button
+-Study activities paginated lists
+    id
+    activity name
+    group name
+    start time
+    end time( inferred by the last word_review_item submitted)
+    -number of review items 
+
+####Needed API Points
+-GET /api/study-activities/:id
+-GET /api/study-activities/:id/study_sessions
+
+
+
+
+
+### Study Activities Launc /suty_activities/:id/launch
+
+####Purpose
+The purpose of this page is to launch a study activity
+
+####Components
+-Name of study activity
+Launch form
+    select field for group
+    launch now button
+
+##Behavious
+After the form is submitted a new tab opens with the study activity based on its URL provided in the database. Also the after form is submitted the page will direct to the study session show page
+
+####needed API Points
+-POST /api/study_activites
+
+
+### Words /words
+
+####Purpose
+The purpose of this page is to show all words in our database
+
+####Components
+-paginated word list
+    column
+        japanese
+        romaji
+        english
+        correct count
+        wrong count
+    pagination with 100 items per page
+    clicking the japanese word will take us to the word show page    
+
+####needed API Points
+-GET /api/words
+
+
+
+
+## Word show /word/:id
+
+####Purpose
+The purpose of this page is to show information about a specific word
+
+####Components
+-Japanese
+-Romaji
+-English
+-Study Statistics 
+    correct count
+    wrong count
+word groups
+    show a series of pills eg tags
+    -when group name is clicked it will take us to the group show page 
+
+####needed API Points
+-GET /api/words/:id
+
+
+### Word groups /group
+
+####Purpose
+The purpose of this page is to show list of groups in our database
+
+####Components
+paginated group list 
+    columns
+        group name
+        word count
+    clicking the group name will take us to the group
+    show page
+
+
+####needed API Points
+
+-GET /api/groups/:id
+
+
+
+
+
+## Word groups /group
+
+####Purpose
+the purpose of this gpage is to show infromation about a specific group
+
+####Components
+group name
+group statistic
+    total word count
+words in group (paginated list of words)
+    should use the same component as the words index page
+study sessions   (paginated list of words)  
+    should use the same component as the study sessions index page
+
+####needed API Points
+-GET /api/groups/:id/words
+
+
+###Study Session index /
+####Purpose
+the purpose of this page is  
+####Components
+####needed API Points
+
+
+
+
+
+###Study Session index /
+####Purpose
+the purpose of this pa
+####Components
+####needed API Points
