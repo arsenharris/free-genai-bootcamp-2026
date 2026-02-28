@@ -20,7 +20,7 @@ class GroupSerializer(serializers.ModelSerializer):
 
 
 class WordReviewItemSerializer(serializers.ModelSerializer):
-    word = WordSerializer(read_only=True, source='word')
+    word = WordSerializer(read_only=True)
 
     class Meta:
         model = WordReviewItem
